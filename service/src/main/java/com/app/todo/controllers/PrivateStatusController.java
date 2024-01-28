@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/private")
-public class Controller {
+public class PrivateStatusController {
 
     @GetMapping("/status")
     public ResponseEntity<String> privateStatus() {
-        return new ResponseEntity<String>("OK", HttpStatus.OK);
+        return new ResponseEntity<>("OK", HttpStatus.OK);
     }
 }
